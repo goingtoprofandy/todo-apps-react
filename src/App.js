@@ -27,13 +27,18 @@ class App extends React.Component {
   }
 
   setSubmit(event) {
-    this.setState({items: [...this.state.items, {
-        title: this.state.title,
-        description: this.state.description
-      }].reverse(),
-      title: '',
-      description: ''
-    })
+    if (this.state.title == '' || this.state.description == '') {
+      alert('Harap isi seluruh form')
+    }
+    else {
+      this.setState({items: [...this.state.items, {
+          title: this.state.title,
+          description: this.state.description
+        }].reverse(),
+        title: '',
+        description: ''
+      })
+    }
   }
 
   render() {
