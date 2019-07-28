@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './components/Container'
 import EditText from './components/EditText'
 import Button from './components/Button'
+import Text from './components/Text'
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class App extends React.Component {
     this.setState({items: [...this.state.items, {
         title: this.state.title,
         description: this.state.description
-      }],
+      }].reverse(),
       title: '',
       description: ''
     })
@@ -45,7 +46,12 @@ class App extends React.Component {
           <Button type="button" value="Simpan" click={this.setSubmit} />
         </form>
         {this.state.items.map((item, key) => {
-          
+          return(
+            <Container.ListItem>
+              <Text value={item.title} type="heading" />
+              <Text value={item.title} />
+            </Container.ListItem>
+          )
         })}
       </Container.Card>
     )

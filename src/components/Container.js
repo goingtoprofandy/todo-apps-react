@@ -16,7 +16,7 @@ const ListItem = styled.div`
 
 const Container = {
     Card: Card,
-    Item: ListItem
+    ListItem: ListItem
 }
 
 export default Container

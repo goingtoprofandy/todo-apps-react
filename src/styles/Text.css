@@ -1,0 +1,8 @@
+.Text {
+    display: block;
+    font-size: 16px;
+    color: #999999;
+}
+.TextHeading {
+    font-size: 18px !important;
+}
