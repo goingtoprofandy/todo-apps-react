@@ -1,0 +1,10 @@
+.EditText {
+    outline: none;
+    border: 1px solid #efefef;
+    background-color: #fafafa;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #999;
+    width: 96%;
+    margin-bottom: 8px;
+}
